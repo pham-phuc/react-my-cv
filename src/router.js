@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { HomePage } from "./pages/home/HomePage";
+import HomePage from "./pages/home/HomePage";
 import ResumePage from "./pages/resume/ResumePage";
-import { PortfolioPage } from "./pages/portfolio/PortfolioPage";
-import { BlogPage } from "./pages/blog/BlogPage";
-import { ContactPage } from "./pages/contact/ContactPage";
+import PortfolioPage  from "./pages/portfolio/PortfolioPage";
+import BlogPage  from "./pages/blog/BlogPage";
+import ContactPage from './pages/contact/ContactPage'
 
 const Router = () => {
   return (

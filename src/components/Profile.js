@@ -4,7 +4,7 @@ export const Profile = () => {
   return (
     <div className="content-left py-0 w-[25%] px-[15px]">
       <div className="profile w-full bg-[#fff] rounded-md boxshadow">
-        <div className="profile-name leading-[18px] p-5 pb-0">
+        <div className="profile-name leading-[18px] p-5 ">
           <span class="name uppercase text-[17px] font-bold text-[#333]">
             Henry Rooney
           </span>

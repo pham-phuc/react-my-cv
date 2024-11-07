@@ -1,15 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
 }
 body {
-  width: 100vw;
+  /* width: 100vw; */
   font-family: "Roboto", sans-serif;
   background: url("../../my_cv/public/image/bg.280cef1c.png") #fafafa;
   overflow-x: hidden;
+  position: relative;
+  line-height: 1.42857143;
 }
 
 code {
@@ -25,6 +99,7 @@ code {
   -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
 }
 .profile-image {
+  margin-top: -18px;
   clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
 }
 ul.profile-information li {
@@ -104,3 +179,254 @@ ul.profile-information li:last-child {
   margin-top: 4px;
 }
 
+@media (min-width: 1200px) {
+  .lg-9 {
+    width: 75%;
+  }
+}
+
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+} */
+/* .container {
+  padding-right: -15px;
+  padding-left: -15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+.service .icon i:before {
+  font-size: 44px;
+  margin-left: 0;
+}
+.timeline li {
+  border-left: solid 2px #eee;
+}
+.timeline li:first-child i {
+  background: #ffc500;
+  padding: 18px 18px;
+  font-size: 16px;
+  border-radius: 100rem;
+  margin: -13px -28px;
+}
+.timeline li:not(:first-child)::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 2px solid #ffc500;
+  border-radius: 100rem;
+  position: absolute;
+  margin-top: 6px;
+  left: -4px;
+}
+.timeline li:first-child h2 {
+  margin-left: 12px;
+}
+.timeline li:last-child {
+  border: none;
+}
+
+.site-form .site-area {
+  width: 100%;
+  border: 0;
+  border-bottom: solid 1px #dfdfdf;
+  font-size: 13px;
+  padding: 20px 0 0 10px;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+.site-form .site-area:forcus-visible {
+  border: none !important;
+}
+#blog {
+  .wrapper-item:hover {
+    transition: all ease 0.3s;
+    box-shadow: 0px 0px 20px 0px rgba(4, 6, 4, 0.08);
+  }
+  .wrapper-item:hover {
+    transition: all ease 0.3s;
+    box-shadow: 0px 0px 20px 0px rgba(4, 6, 4, 0.08);
+  }
+}
+#portfolio {
+  .wrapper-item .item:hover .icon {
+    visibility: visible;
+    top: 30%;
+  }
+  .wrapper-item:hover {
+    backgroundcolor: #fff;
+  }
+  .wrapper-item:hover {
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    box-shadow: 0px 0px 20px 0px rgba(4, 6, 4, 0.08);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(4, 6, 4, 0.08);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(4, 6, 4, 0.08);
+  }
+  .wrapper-item {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08);
+    -webkit-box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08);
+    -moz-box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08);
+  }
+}
+#contact {
+  .site-form .site-input {
+    border-bottom: solid 1px #dfdfdf;
+  }
+  .site-form .site-area {
+    border-bottom: solid 1px #dfdfdf;
+  }
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .container,
+  .responsive,
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .responsive {
+  }
+  .content-left {
+    width: 100% !important;
+  }
+  ul.profile-information {
+    margin: 0 auto 30px;
+    display: table;
+  }
+  .bar {
+    height: 71px;
+    margin-top: 30px;
+    border-radius: 6px;
+  }
+  .bar-tabs li:first-child {
+    height: 100%;
+  }
+  .bars-icon {
+    border-left: solid 1px #eaeaea;
+  }
+  .bar-tabs li:not(:first-child) {
+    display: none;
+  }
+  .content-right {
+    width: 100% !important;
+  }
+  .content_right .content {
+    margin-top: 30px;
+  }
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .service-item {
+    width: 100%;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer .name {
+    display: none;
+  }
+  .bar-dynamic .site-btn {
+    display: none;
+  }
+  .bars-icon {
+    display: block;
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 71px;
+    border-left: solid 1px #eaeaea;
+    padding-left: 21px;
+  }
+}
+@media (max-width: 996px) {
+  /* .icon-nav{
+    display:none;
+  } */
+  .container,
+  .responsive,
+  .skills,
+  .education-content,
+  .client-list,
+  .testimonial-list  {
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+  }
+  .testimonial{
+    width: 100% !important;
+  }
+  .content-left {
+    width: 100% !important;
+  }
+  ul.profile-information {
+    margin: 0 auto 30px;
+    display: table;
+  }
+  .bar {
+    height: 71px;
+    margin-top: 30px;
+    border-radius: 6px;
+  }
+  .bar-tabs li:first-child {
+    height: 100%;
+  }
+  .bars-icon {
+    border-left: solid 1px #eaeaea;
+  }
+  .bar-tabs li:not(:first-child) {
+    display: none;
+  }
+  .content-right {
+    width: 100% !important;
+  }
+  .content_right .content {
+    margin-top: 30px;
+  }
+  .bars-icon {
+    display: block;
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 71px;
+    border-left: solid 1px #eaeaea;
+    padding-left: 21px;
+  }
+  .text-res {
+    line-height: 58px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    padding: 0 10px;
+    display: block;
+  }
+}
+.text-res {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  padding: 0 10px;
+  line-height: 73px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #blog .wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .column{
+    width:100% !important;
+  }
+}
