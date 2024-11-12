@@ -1,23 +1,21 @@
 import React from "react";
-import TimeLine from "./TimeLine";
+import SectionTitle from '../../components/SectionTitle'
 import Testimonial from "./Testimonial";
+import TimeLine from "./TimeLine";
 const ResumePage = () => {
   return (
-    <div id="resume" className="resume rounded-lg bg-[#fff] mt-[30px]">
+    <div id="resume" className="resume rounded-lg bg-[#fff] mt-[36px]">
       <section className="px-[30px] pt-[30px] pb-[45px]">
-        <div className="education">
-          <div className="section-title relative inline-block py-0 px-[3px] ">
-            <span className="bg-[#ffb100] absolute h-[7px] w-full opacity-[0.4] left-0 bottom-[3px]"></span>
-            <h2 className="text-[18px] font-[600]">Resume</h2>
-          </div>
+        <div className="education mt-[13px]">
+          <SectionTitle title={"Resume"}></SectionTitle>
           <div
             className="education-content flex items-center
-         justify-between gap-[40px] my-[15px] mx-[25px] "
+           justify-between gap-[78px] my-[5px] mx-[25px] "
           >
             <div className="working-history mt-[30px]">
               <ul className="timeline">
-                <li className="flex items-center justify-self-start gap-[50px] pb-[40px]">
-                  <i className="fa fa-suitcase icon bg-[#ffc500] p-[18px] text-[16px] rounded-full my-[-13px] mx-[-45px]"></i>
+                <li className="flex items-center justify-self-start gap-[45px] pb-[60px]">
+                  <i className="fa fa-suitcase icon bg-[#ffc500] p-[18px] text-[15px] text-center ml-[3px]  rounded-full my-[-13px] mx-[-45px]"></i>
                   <h2 className="timeline-title font-[700] text-[20px]">
                     Working History
                   </h2>
@@ -47,8 +45,8 @@ const ResumePage = () => {
             </div>
             <div className="education-history mt-[30px]">
               <ul className="timeline">
-                <li className="flex items-center justify-self-start gap-[50px] pb-[40px]">
-                  <i className="fa fa-graduation-cap icon bg-[#ffc500] p-[18px] text-[16px] rounded-full my-[-13px] mx-[-45px]"></i>
+                <li className="flex items-center justify-self-start gap-[50px] pb-[60px]">
+                  <i className="fa fa-graduation-cap icon bg-[#ffc500] p-[18px] text-[15px] text-center rounded-full my-[-13px] mx-[-45px]"></i>
                   <h2 className="timeline-title font-[700] text-[20px]">
                     Education History
                   </h2>
@@ -81,12 +79,11 @@ const ResumePage = () => {
       </section>
 
       <section>
-        <div className="clients bg-[#fafafa] py-[45px] px-[30px] mb-[30px]">
-          <div className="section-title relative inline-block py-0 px-[3px] mb-[30px] ">
-            <span className="bg-[#ffb100] absolute h-[7px] w-full opacity-[0.4] left-0 bottom-[3px]"></span>
-            <h2 className="text-[18px] font-[600]">Clients</h2>
-          </div>
-
+        <div className="clients bg-[#fafafa] py-[45px] px-[30px]">
+          <SectionTitle
+            title={"Clients"}
+            className={"mb-[30px]"}
+          ></SectionTitle>
           <div className="client-list flex items-center justify-between gap-[30px]">
             <div className="client py-[26px] px-[16px] bg-[#fff] rounded-[6px] boxshadow">
               <img
@@ -121,11 +118,11 @@ const ResumePage = () => {
       </section>
 
       <section>
-        <div className="testimonials px-[30px] pb-[30px] pt-[15px]">
-          <div className="section-title relative inline-block py-0 px-[3px] mb-[30px]">
-            <span className="bg-[#ffb100] absolute h-[7px] w-full opacity-[0.4] left-0 bottom-[3px]"></span>
-            <h2 className="text-[18px] font-[600]">Testimonials</h2>
-          </div>
+        <div className="testimonials px-[30px] py-[45px]">
+          <SectionTitle
+            title={"Testimonials"}
+            className={"mb-[30px]"}
+          ></SectionTitle>
 
           <div className="testimonial-list flex items-center justify-between gap-[30px]">
             <Testimonial
@@ -160,11 +157,7 @@ const ResumePage = () => {
             ></Testimonial>
           </div>
 
-          <div className="flex justify-center mt-[15px] gap-[10px]">
-            <span className="transfer block w-[10px] h-[10px] rounded-full bg-[#ffc500] "></span>
-            <span className="transfer block w-[10px] h-[10px] rounded-full bg-[#ffc500] "></span>
-            <span className="transfer block w-[10px] h-[10px] rounded-full bg-[#ffc500] "></span>
-          </div>
+
         </div>
       </section>
     </div>

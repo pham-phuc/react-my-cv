@@ -2,12 +2,12 @@ import React from 'react';
 
 const BlogItem = ({ src, category, title, text, date }) => {
   return (
-    <div className="wrapper-item p-[15px] bg-[#fcfcfc] hover:bg-[#fff] rounded-[8px]">
+    <div className="wrapper-item p-[15px] pl-[15px] mb-[5px] bg-[#fcfcfc] hover:bg-[#fff] rounded-[8px]">
       <div className="item bg-[#fff] rounded-[8px] overflow-hidden">
         <div className="item-img">
           <img src={src} alt={title} />
         </div>
-        <div className="item-detail p-[14px]">
+        <div className="item-detail p-[15px]">
           <span className="category text-[13px] text-[#afafaf]">
             {category}
           </span>

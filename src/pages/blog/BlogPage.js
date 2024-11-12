@@ -39,14 +39,14 @@ const BlogPage = () => {
       date: "19 Oct 17",
     },
     {
-      src: "https://html.tavonline.co/mat/default/images/blogs/blog-3.jpg",
+      src: "https://techlead-training.web.app/blog-5.03fcecf8.jpg",
       category: "Other",
       title: "How to connect your iMac or MacBook",
       text: "However hard he threw himself onto his right, he always rolled back to where he was.",
       date: "19 Aug 17",
     },
   ];
-  const columns = 3; // Số cột bạn muốn
+  // const columns = 3; 
 
   // Chia mảng thành các cột
   const chunkedData = [];
@@ -55,15 +55,15 @@ const BlogPage = () => {
   }
 
   return (
-    <div id="blog" className="resume rounded-lg bg-[#fff] mt-[30px]">
+    <div id="blog" className="resume rounded-lg bg-[#fff] mt-[36px]">
       <section className="pt-0 px-[15px] pr-[30px] pb-[30px]">
-        <div className="content-header py-0 px-[15px] mb-[15px]">
-          <div className="section-title relative inline-block py-0 px-[3px] mt-[30px] mb-[15px]">
+        <div className="content-header py-0 px-[15px] mb-[0]">
+          <div className="section-title relative inline-block py-0 px-[3px] mt-[42px] mb-[11px]">
             <span className="bg-[#ffb100] absolute h-[7px] w-full opacity-[0.4] left-0 bottom-[3px]"></span>
             <h2 className="text-[18px] font-[600]">Blog Posts</h2>
           </div>
         </div>
-        <div className="wrapper flex flex-row justify-between bg-[#fcfcfc]">
+        <div className="wrapper w-[817.5px] flex flex-row justify-between bg-[#fcfcfc] h-[786px]">
           {chunkedData.map((columnItems, colIndex) => (
             <div key={colIndex} className="column w-[calc(100%/3)]">
               {columnItems.map((item, idx) => (
